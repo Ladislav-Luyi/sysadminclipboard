@@ -6,7 +6,6 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.BorderPane;
@@ -14,7 +13,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 
-public class PernamentClipboardScene extends Scene implements SceneInterface {
+public class PernamentClipboardScene extends SceneAbstract {
     private static PernamentClipboardScene pernamentClipboardScene;
     private static VBox vBox;
     private static BorderPane borderPane = new BorderPane();

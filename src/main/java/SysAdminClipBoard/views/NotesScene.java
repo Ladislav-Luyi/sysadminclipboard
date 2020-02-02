@@ -4,7 +4,6 @@ import SysAdminClipBoard.ClipBoardHandler;
 import SysAdminClipBoard.ClipBoardHandlerRunner;
 import javafx.application.Platform;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.BorderPane;
@@ -12,7 +11,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Font;
 
-public class NotesScene extends Scene implements SceneInterface {
+public class NotesScene extends SceneAbstract {
     private static NotesScene notesScene;
     private static StackPane stackPane;
     private static BorderPane borderPane = new BorderPane();

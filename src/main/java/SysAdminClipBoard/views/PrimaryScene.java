@@ -14,7 +14,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 
-public class PrimaryScene extends Scene implements SceneInterface {
+public class PrimaryScene extends SceneAbstract {
     private static PrimaryScene primaryScene;
     private static TextField textField;
     private static VBox vBox;
@@ -129,7 +129,7 @@ public class PrimaryScene extends Scene implements SceneInterface {
 
     public static void AddNewEntryInVbox(ClipBoardHandler mch, String i, String s){
         textField = new TextField();
-        textField.setStyle("-fx-control-inner-background: #"+value1.toString().substring(2)+";-fx-text-inner-color: #"+ value.toString().substring(2));
+        textField.setStyle("-fx-control-inner-background: #"+ value1.toString().substring(2)+";-fx-text-inner-color: #"+ value.toString().substring(2));
         textField.setText(s);
         textField.setFont(Font.font ("Verdana", 12));
         textField.setEditable(false);
@@ -146,7 +146,7 @@ public class PrimaryScene extends Scene implements SceneInterface {
         });
 
         button1.setMaxSize(1,1);
-        button1.setStyle(yellowButtonCollor);
+        button1.setStyle( yellowButtonCollor);
 
         inVBox.setLeft(button1);
 
